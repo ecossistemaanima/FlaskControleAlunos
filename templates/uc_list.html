@@ -25,10 +25,14 @@
                                 <td>{{uc.tipo}}</td>
                                 <td>{{uc.inicio}}</td>
                                 <td>{{uc.fim}}</td>
+                                <td><a href="/uc/update/{{uc.id}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Alterar</a>
+                                    <a href="/uc/delete/{{uc.id}}" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Apagar</a>
+                                </td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
+                    <a href="/uc/create" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Novo</a>
                 </div>
             </div>
         </div>
